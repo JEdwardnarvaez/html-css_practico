@@ -9,19 +9,23 @@
 <style>
     body {
         margin: 0px;
-        background-color: #AB88FF;
+        background-color: #DFCC74;
         font-family: 'Muli', sans-serif;
         color: white;
         font-weight: bold;
     }
     .header {
-        background-color: #AB88FF;
+        background-color: #DFCC74;
         height: 80px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+    }
+
+    ::placeholder {
+        color: white;
     }
 
     .header__img {
@@ -42,7 +46,7 @@
         width: 100px;
         text-align: right;
         justify-content: space-between;
-        margin: 0px 0px 0px -14px;
+        margin: 0px 0px 0px 30px;
     }
 
     .header__menu:hover ul, ul:hover {
@@ -66,6 +70,7 @@
         margin-right: 8px;
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     .header__menu--profile img{
@@ -79,6 +84,67 @@
 
     }
 
+    .main {
+        height: 300px;
+        text-align: center;
+    }
+
+    .main__titulo {
+        color: white;
+        font-size: 25px;
+    }
+
+    .input {
+        background-color: rgba(255,255,255,0.1);
+        border: 2px solid white;
+        border-radius: 25px;
+        color: white;
+        font-size: 16px;
+        height: 35px;
+        padding: 0px 20px;
+        width: 70%;
+        outline: none;
+    }
+
+    .carousel {
+        width: 100%;
+        overflow: scroll;
+        padding: 30px;
+        position: relative;
+    }
+
+    .carousel__container {
+        white-space: nowrap;
+        margin: 70px 0px;
+        padding-bottom: 10px;
+    }
+    
+    .carousel__item {
+        width: 200px;
+        height: 250px;
+        border-radius: 25px;
+        background-color: aqua;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .carousel__item:hover ~ .carousel__item{
+        transform: translate3d(100px, 0, 0);
+    }
+
+    .carousel__container:hover .carousel__item{
+        opacity: 0.3;
+    }
+
+    .carousel__container:hover .carousel__item:hover {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+
+
 </style>
 <body>
     <header class="header">
@@ -86,7 +152,7 @@
         <div class="header__menu"> 
             <div class="header__menu--profile">
                 <img src="./user.male-circle.png" alt="">
-                <p>Perfil</p>
+                <p>Lina Araujo</p>
             </div>
             <ul>
                 <li><a href="/">Cuenta</a></li>
@@ -94,5 +160,23 @@
             </ul>
         </div>
     </header>
+    <section class="main">
+        <h2 class="main__titulo">¿Qué quieres ver hoy?</h2>
+        <input class="input"  type="text" placeholder="Buscar...">
+    </section>
+    <section class="carousel" >
+        <div class="carousel__container">
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+        </div>
+    </section>
 </body>
 </html>

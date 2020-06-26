@@ -1,3 +1,14 @@
 icons8 --> íconos
 pexels --> imágenes sin derechos de autor
 coolrs --> paleta de colores css
+
+FLEX SELECTORS: 
+
+Justify-content
+Align-items
+flex-direction
+order
+align-self
+flex-wrap (flex-direction, flex-wrap)
+flex-flow
+align-content

@@ -89,16 +89,31 @@
 <body>
     <header class="header">
         <img class="header__img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="">
-        <div class="header__menu"> 
-            <div class="header__menu--profile">
-                <img src="./user.male-circle.png" alt="">
-                <p>Lina Araujo</p>
-            </div>
-            <ul>
-                <li><a href="/">Cuenta</a></li>
-                <li><a href="/">Cerrar sesión</a></li>
-            </ul>
-        </div>
     </header>
+    <section class="login" >
+        <section class="login__container">
+            <h2>Vamos, inicia sesión puto</h2>
+            <form class="login__container--form">
+                <input class="input" type="text" placeholder="Correo electrónico">
+                <input class="input" type="password" placeholder="Contraseña">
+                <button class="button">Iniciar sesión</button>
+                <div class="login_container--remember-me">
+                    <label>
+                    <input type="checkbox" id="cbox1" value="checkbox">Recuérdame</label>
+                    <a href="/">Olvidé mi contraseña</a>
+                </div>
+            </form>
+            <section class="login__container--social-media"> 
+                <div><img src="https://static.platzi.com/media/tmp/class-files/git/curso-frontend-escuelajs/curso-frontend-escuelajs-maquetacion-login-HTML/maquetacion-login-HTML/assets/google-icon.png" alt="Google-icon">Inicia sesión con Google</div>
+                <div><img src="https://static.platzi.com/media/tmp/class-files/git/curso-frontend-escuelajs/curso-frontend-escuelajs-maquetacion-login-HTML/maquetacion-login-HTML/assets/twitter-icon.png" alt="Twitter-icon">Inicia sesión con Twitter</div>
+            </section>
+            <p class="login__container--register">No tienes ninguna cuenta <a href="/">regístrate</a></p>
+        </section>
+    </section>
+    <footer class="footer">
+        <a href="/">Términos de uso</a>
+        <a href="/">Declaración de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
 </body>
 </html>

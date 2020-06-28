@@ -2,89 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&amp;display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
-
-<style>
-        
-    body { 
-        margin: 0px;
-        background-color: #183446;
-        font-family: 'Muli', sans-serif;
-        color: white;
-        font-weight: bold;
-    }
-    .header {
-        height: 80px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    ::placeholder {
-        color: white;
-    }
-
-    .header__img {
-        width: 200px;
-        padding: 10px;
-    }
-
-    .header__menu {
-        margin-right: 30px;
-    }
-
-    .header__menu ul{
-
-        display:none;
-        list-style: none;
-        padding: 0px;
-        position: absolute;
-        width: 100px;
-        text-align: right;
-        justify-content: space-between;
-        margin: 0px 0px 0px 30px;
-    }
-
-    .header__menu:hover ul, ul:hover {
-        display: block;
-    }
-
-    .header__menu li {
-        margin: 10px 0px;
-    }
-
-    .header__menu li a{
-        color: white;
-        text-decoration: none;
-    }
-
-    .header__menu li a:hover{
-        text-decoration: underline;
-    }
-
-    .header__menu--profile {
-        margin-right: 8px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .header__menu--profile img{
-        margin-right: 8px; 
-        width: 40px;
-
-    }
-
-    .header__menu--profile p{
-        margin: 0px;
-
-    }
-
-</style>
-
 
 <body>
     <header class="header">
@@ -92,14 +13,13 @@
     </header>
     <section class="login" >
         <section class="login__container">
-            <h2>Vamos, inicia sesión puto</h2>
+            <h2>Inicia sesión</h2>
             <form class="login__container--form">
                 <input class="input" type="text" placeholder="Correo electrónico">
                 <input class="input" type="password" placeholder="Contraseña">
                 <button class="button">Iniciar sesión</button>
-                <div class="login_container--remember-me">
-                    <label>
-                    <input type="checkbox" id="cbox1" value="checkbox">Recuérdame</label>
+                <div class="login__container--remember-me">
+                    <label><input type="checkbox" id="cbox1" value="checkbox">Recuérdame</label>
                     <a href="/">Olvidé mi contraseña</a>
                 </div>
             </form>
